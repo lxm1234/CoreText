@@ -6,8 +6,9 @@
 //  Copyright © 2018年 lixiaomeng. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 @interface CoreTextImageData : NSObject
-
+@property (nonatomic,assign) CGRect imagePosition;
+@property (nonatomic,strong) NSString* name;
 @end

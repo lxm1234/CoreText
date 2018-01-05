@@ -7,7 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "CoreTextData.h"
+#import <CoreText/CoreText.h>
 
 @interface CTDisplayView : UIView
-
+@property (strong,nonatomic) CoreTextData* data;
 @end

@@ -6,8 +6,11 @@
 //  Copyright © 2018年 lixiaomeng. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 @interface CTFrameParserConfig : NSObject
-
+@property (nonatomic,assign) CGFloat width;
+@property (nonatomic,assign) CGFloat fontsize;
+@property (nonatomic,assign) CGFloat lineSpace;
+@property (nonatomic,strong) UIColor* textColor;
 @end

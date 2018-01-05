@@ -7,7 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
-
+#import "CoreTextData.h"
+#import "CTFrameParserConfig.h"
 @interface CTFrameParse : NSObject
-
++ (NSDictionary*)attributesWithConfig:(CTFrameParserConfig*)config;
++ (CoreTextData*) parseContent:(NSString*)content config:(CTFrameParserConfig*)config;
++ (CoreTextData*) parseAttributedContent:(NSMutableAttributedString*)content config:(CTFrameParserConfig*)config;
++ (CoreTextData*) parseTemplateFile:(NSString*)path config:(CTFrameParserConfig*)config;
 @end
